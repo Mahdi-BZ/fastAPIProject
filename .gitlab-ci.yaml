@@ -1,0 +1,13 @@
+stages:
+  - install
+  - test
+
+install-job:
+  stage: install
+  script:
+    - pip install -r requirements.txt
+
+test-job:
+  stage: test
+  script:
+    - pytest

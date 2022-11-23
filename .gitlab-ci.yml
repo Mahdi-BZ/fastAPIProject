@@ -2,6 +2,9 @@ stages:
   - install
   - test
 
+default:
+  image: python:3.9
+
 install-job:
   stage: install
   script:
